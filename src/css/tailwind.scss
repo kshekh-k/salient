@@ -14,3 +14,34 @@
 .scrollbar::-webkit-scrollbar-thumb {
     @apply bg-white/50;
 }
+
+/*  --------  */
+.on-hover-scroll {
+    scrollbar-color: rgb(255 255 255 0.75) transparent;
+  }
+  
+  .on-hover-scroll::-webkit-scrollbar {
+    @apply h-1.5 w-1.5 opacity-0 absolute bg-transparent;
+  }
+  
+  .on-hover-scroll:hover::-webkit-scrollbar {
+    @apply h-1.5 w-1.5 opacity-100;
+  }
+  
+  
+  .on-hover-scroll::-webkit-scrollbar-track {
+    @apply absolute bg-transparent transition-all duration-200 ease-in-out opacity-0;
+  }
+  
+  .on-hover-scroll:hover::-webkit-scrollbar-track {
+    @apply bg-transparent opacity-0
+  }
+  
+  .on-hover-scroll::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-transparent transition-all duration-200 ease-in-out opacity-0;
+  }
+  
+  .on-hover-scroll:hover::-webkit-scrollbar-thumb {
+    @apply bg-white/70 opacity-100;
+  }
+  
