@@ -571,6 +571,9 @@ video {
 .pt-20{
   padding-top: 5rem;
 }
+.pb-0{
+  padding-bottom: 0px;
+}
 .font-display{
   font-family: Lexend, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
